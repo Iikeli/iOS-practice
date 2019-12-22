@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3421280F23AFB19A003002F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421280E23AFB19A003002F6 /* AppDelegate.swift */; };
+		3421281123AFB19A003002F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421281023AFB19A003002F6 /* SceneDelegate.swift */; };
+		3421281623AFB19A003002F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3421281423AFB19A003002F6 /* Main.storyboard */; };
+		3421281823AFB19A003002F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3421281723AFB19A003002F6 /* Assets.xcassets */; };
+		3421281B23AFB19A003002F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3421281923AFB19A003002F6 /* LaunchScreen.storyboard */; };
+		3421282623AFB19A003002F6 /* Greek_GodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421282523AFB19A003002F6 /* Greek_GodsTests.swift */; };
+		3421283123AFB19B003002F6 /* Greek_GodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421283023AFB19B003002F6 /* Greek_GodsUITests.swift */; };
+		3421283F23AFB357003002F6 /* GreekGodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421283E23AFB357003002F6 /* GreekGodsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3421282223AFB19A003002F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3421280323AFB19A003002F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3421280A23AFB19A003002F6;
+			remoteInfo = "Greek Gods";
+		};
+		3421282D23AFB19A003002F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3421280323AFB19A003002F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3421280A23AFB19A003002F6;
+			remoteInfo = "Greek Gods";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3421280B23AFB19A003002F6 /* Greek Gods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greek Gods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3421280E23AFB19A003002F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3421281023AFB19A003002F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3421281523AFB19A003002F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3421281723AFB19A003002F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3421281A23AFB19A003002F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3421281C23AFB19A003002F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3421282123AFB19A003002F6 /* Greek GodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Greek GodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3421282523AFB19A003002F6 /* Greek_GodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greek_GodsTests.swift; sourceTree = "<group>"; };
+		3421282723AFB19A003002F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3421282C23AFB19A003002F6 /* Greek GodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Greek GodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3421283023AFB19B003002F6 /* Greek_GodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greek_GodsUITests.swift; sourceTree = "<group>"; };
+		3421283223AFB19B003002F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3421283E23AFB357003002F6 /* GreekGodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekGodsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3421280823AFB19A003002F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3421281E23AFB19A003002F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3421282923AFB19A003002F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3421280223AFB199003002F6 = {
+			isa = PBXGroup;
+			children = (
+				3421280D23AFB19A003002F6 /* Greek Gods */,
+				3421282423AFB19A003002F6 /* Greek GodsTests */,
+				3421282F23AFB19B003002F6 /* Greek GodsUITests */,
+				3421280C23AFB19A003002F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3421280C23AFB19A003002F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3421280B23AFB19A003002F6 /* Greek Gods.app */,
+				3421282123AFB19A003002F6 /* Greek GodsTests.xctest */,
+				3421282C23AFB19A003002F6 /* Greek GodsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3421280D23AFB19A003002F6 /* Greek Gods */ = {
+			isa = PBXGroup;
+			children = (
+				3421280E23AFB19A003002F6 /* AppDelegate.swift */,
+				3421281023AFB19A003002F6 /* SceneDelegate.swift */,
+				3421281423AFB19A003002F6 /* Main.storyboard */,
+				3421281723AFB19A003002F6 /* Assets.xcassets */,
+				3421281923AFB19A003002F6 /* LaunchScreen.storyboard */,
+				3421281C23AFB19A003002F6 /* Info.plist */,
+				3421283E23AFB357003002F6 /* GreekGodsTableViewController.swift */,
+			);
+			path = "Greek Gods";
+			sourceTree = "<group>";
+		};
+		3421282423AFB19A003002F6 /* Greek GodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3421282523AFB19A003002F6 /* Greek_GodsTests.swift */,
+				3421282723AFB19A003002F6 /* Info.plist */,
+			);
+			path = "Greek GodsTests";
+			sourceTree = "<group>";
+		};
+		3421282F23AFB19B003002F6 /* Greek GodsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3421283023AFB19B003002F6 /* Greek_GodsUITests.swift */,
+				3421283223AFB19B003002F6 /* Info.plist */,
+			);
+			path = "Greek GodsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3421280A23AFB19A003002F6 /* Greek Gods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3421283523AFB19B003002F6 /* Build configuration list for PBXNativeTarget "Greek Gods" */;
+			buildPhases = (
+				3421280723AFB19A003002F6 /* Sources */,
+				3421280823AFB19A003002F6 /* Frameworks */,
+				3421280923AFB19A003002F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Greek Gods";
+			productName = "Greek Gods";
+			productReference = 3421280B23AFB19A003002F6 /* Greek Gods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3421282023AFB19A003002F6 /* Greek GodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3421283823AFB19B003002F6 /* Build configuration list for PBXNativeTarget "Greek GodsTests" */;
+			buildPhases = (
+				3421281D23AFB19A003002F6 /* Sources */,
+				3421281E23AFB19A003002F6 /* Frameworks */,
+				3421281F23AFB19A003002F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3421282323AFB19A003002F6 /* PBXTargetDependency */,
+			);
+			name = "Greek GodsTests";
+			productName = "Greek GodsTests";
+			productReference = 3421282123AFB19A003002F6 /* Greek GodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3421282B23AFB19A003002F6 /* Greek GodsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3421283B23AFB19B003002F6 /* Build configuration list for PBXNativeTarget "Greek GodsUITests" */;
+			buildPhases = (
+				3421282823AFB19A003002F6 /* Sources */,
+				3421282923AFB19A003002F6 /* Frameworks */,
+				3421282A23AFB19A003002F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3421282E23AFB19A003002F6 /* PBXTargetDependency */,
+			);
+			name = "Greek GodsUITests";
+			productName = "Greek GodsUITests";
+			productReference = 3421282C23AFB19A003002F6 /* Greek GodsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3421280323AFB19A003002F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nifty Tree Studios";
+				TargetAttributes = {
+					3421280A23AFB19A003002F6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					3421282023AFB19A003002F6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 3421280A23AFB19A003002F6;
+					};
+					3421282B23AFB19A003002F6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 3421280A23AFB19A003002F6;
+					};
+				};
+			};
+			buildConfigurationList = 3421280623AFB19A003002F6 /* Build configuration list for PBXProject "Greek Gods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3421280223AFB199003002F6;
+			productRefGroup = 3421280C23AFB19A003002F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3421280A23AFB19A003002F6 /* Greek Gods */,
+				3421282023AFB19A003002F6 /* Greek GodsTests */,
+				3421282B23AFB19A003002F6 /* Greek GodsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3421280923AFB19A003002F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3421281B23AFB19A003002F6 /* LaunchScreen.storyboard in Resources */,
+				3421281823AFB19A003002F6 /* Assets.xcassets in Resources */,
+				3421281623AFB19A003002F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3421281F23AFB19A003002F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3421282A23AFB19A003002F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3421280723AFB19A003002F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3421280F23AFB19A003002F6 /* AppDelegate.swift in Sources */,
+				3421283F23AFB357003002F6 /* GreekGodsTableViewController.swift in Sources */,
+				3421281123AFB19A003002F6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3421281D23AFB19A003002F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3421282623AFB19A003002F6 /* Greek_GodsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3421282823AFB19A003002F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3421283123AFB19B003002F6 /* Greek_GodsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3421282323AFB19A003002F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3421280A23AFB19A003002F6 /* Greek Gods */;
+			targetProxy = 3421282223AFB19A003002F6 /* PBXContainerItemProxy */;
+		};
+		3421282E23AFB19A003002F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3421280A23AFB19A003002F6 /* Greek Gods */;
+			targetProxy = 3421282D23AFB19A003002F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3421281423AFB19A003002F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3421281523AFB19A003002F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3421281923AFB19A003002F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3421281A23AFB19A003002F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3421283323AFB19B003002F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3421283423AFB19B003002F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3421283623AFB19B003002F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5KC3FXWNQ;
+				INFOPLIST_FILE = "Greek Gods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Greek-Gods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3421283723AFB19B003002F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5KC3FXWNQ;
+				INFOPLIST_FILE = "Greek Gods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Greek-Gods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3421283923AFB19B003002F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5KC3FXWNQ;
+				INFOPLIST_FILE = "Greek GodsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Greek-GodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Greek Gods.app/Greek Gods";
+			};
+			name = Debug;
+		};
+		3421283A23AFB19B003002F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5KC3FXWNQ;
+				INFOPLIST_FILE = "Greek GodsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Greek-GodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Greek Gods.app/Greek Gods";
+			};
+			name = Release;
+		};
+		3421283C23AFB19B003002F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5KC3FXWNQ;
+				INFOPLIST_FILE = "Greek GodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Greek-GodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Greek Gods";
+			};
+			name = Debug;
+		};
+		3421283D23AFB19B003002F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5KC3FXWNQ;
+				INFOPLIST_FILE = "Greek GodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Greek-GodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Greek Gods";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3421280623AFB19A003002F6 /* Build configuration list for PBXProject "Greek Gods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3421283323AFB19B003002F6 /* Debug */,
+				3421283423AFB19B003002F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3421283523AFB19B003002F6 /* Build configuration list for PBXNativeTarget "Greek Gods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3421283623AFB19B003002F6 /* Debug */,
+				3421283723AFB19B003002F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3421283823AFB19B003002F6 /* Build configuration list for PBXNativeTarget "Greek GodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3421283923AFB19B003002F6 /* Debug */,
+				3421283A23AFB19B003002F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3421283B23AFB19B003002F6 /* Build configuration list for PBXNativeTarget "Greek GodsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3421283C23AFB19B003002F6 /* Debug */,
+				3421283D23AFB19B003002F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3421280323AFB19A003002F6 /* Project object */;
+}
