@@ -10,6 +10,8 @@ import UIKit
 
 class GreekGodsTableViewController: UITableViewController {
 
+    let greekGods = GreekGodData().getAllGods()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,24 +26,27 @@ class GreekGodsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return greekGods.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "greekGodsTableViewCell", for: indexPath)
+        
+        let god = greekGods[indexPath.row]
+        cell.textLabel!.text = god.name
+        cell.detailTextLabel!.text = "Tap for more..."
         return cell
     }
-    */
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -77,14 +82,18 @@ class GreekGodsTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let indexPath = tableView.indexPathForSelectedRow {
+            if let vc = segue.destination as? GodDetailViewController {
+                vc.god = greekGods[indexPath.row]
+            }
+        }
     }
-    */
 
 }

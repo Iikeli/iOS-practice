@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xKv-eD-WNj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xxn-co-EsE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Greek Gods Table View Controller-->
+        <!--Greek Gods-->
         <scene sceneID="1zp-dT-OiY">
             <objects>
                 <tableViewController id="xKv-eD-WNj" customClass="GreekGodsTableViewController" customModule="Greek_Gods" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,13 +16,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kuv-RF-M0V">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="greekGodsTableViewCell" textLabel="oMz-r6-m0F" detailTextLabel="ILt-YP-QSM" style="IBUITableViewCellStyleValue1" id="kuv-RF-M0V">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kuv-RF-M0V" id="Wuf-qd-H0G">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oMz-r6-m0F">
+                                            <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ILt-YP-QSM">
+                                            <rect key="frame" x="335" y="12" width="59" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="odQ-6U-9az" kind="show" id="RDr-lx-9Ht"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -29,10 +49,83 @@
                             <outlet property="delegate" destination="xKv-eD-WNj" id="WKl-ig-Vru"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Greek Gods" id="Gey-0U-6zU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bo-oV-CBz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901" y="115"/>
+            <point key="canvasLocation" x="1810.144927536232" y="114.50892857142857"/>
+        </scene>
+        <!--God Detail View Controller-->
+        <scene sceneID="FAB-oG-2gQ">
+            <objects>
+                <viewController id="odQ-6U-9az" customClass="GodDetailViewController" customModule="Greek_Gods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="frJ-Bg-azT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TeO-iq-VBF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZv-5C-21G">
+                                <rect key="frame" x="149" y="108" width="245" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="DGG-O7-AIc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zio-cs-X7K">
+                                <rect key="frame" x="149" y="148" width="245" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="FbN-Ou-WgN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TeO-iq-VBF" firstAttribute="top" secondItem="9M8-Mg-4f4" secondAttribute="top" id="AfV-dz-raA"/>
+                            <constraint firstItem="9M8-Mg-4f4" firstAttribute="bottom" secondItem="TeO-iq-VBF" secondAttribute="bottom" id="BQY-Ug-LDV"/>
+                            <constraint firstItem="Zio-cs-X7K" firstAttribute="trailing" secondItem="mZv-5C-21G" secondAttribute="trailing" id="Hd4-sw-1vR"/>
+                            <constraint firstItem="mZv-5C-21G" firstAttribute="top" secondItem="9M8-Mg-4f4" secondAttribute="top" constant="20" id="Qj5-ss-9Bj"/>
+                            <constraint firstItem="9M8-Mg-4f4" firstAttribute="trailing" secondItem="mZv-5C-21G" secondAttribute="trailing" constant="20" id="Wul-oA-NIc"/>
+                            <constraint firstItem="Zio-cs-X7K" firstAttribute="top" secondItem="mZv-5C-21G" secondAttribute="bottom" constant="4" id="bBV-lY-3t8"/>
+                            <constraint firstItem="TeO-iq-VBF" firstAttribute="leading" secondItem="9M8-Mg-4f4" secondAttribute="leading" id="ncC-Vq-L8n"/>
+                            <constraint firstItem="9M8-Mg-4f4" firstAttribute="trailing" secondItem="TeO-iq-VBF" secondAttribute="trailing" id="wjf-fo-I0R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9M8-Mg-4f4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xnj-BO-1uE"/>
+                    <connections>
+                        <outlet property="godDetailsLabel" destination="Zio-cs-X7K" id="zV6-Qz-lIn"/>
+                        <outlet property="godImageView" destination="TeO-iq-VBF" id="N0T-LH-blx"/>
+                        <outlet property="godNameLabel" destination="mZv-5C-21G" id="YvM-RT-fxt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8a-88-mDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2698.5507246376815" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rSN-7k-qSF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xxn-co-EsE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X1a-Uh-Jy4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xKv-eD-WNj" kind="relationship" relationship="rootViewController" id="3pr-PH-2Fn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8h-Bf-qTn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900.00000000000011" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>
