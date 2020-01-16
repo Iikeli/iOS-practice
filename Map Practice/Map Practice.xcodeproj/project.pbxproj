@@ -16,6 +16,8 @@
 		3421286A23B0D6D8003002F6 /* Map_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421286923B0D6D8003002F6 /* Map_PracticeTests.swift */; };
 		3421287523B0D6D8003002F6 /* Map_PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421287423B0D6D8003002F6 /* Map_PracticeUITests.swift */; };
 		3421288423B0D8B7003002F6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3421288323B0D8B7003002F6 /* MapKit.framework */; };
+		3488E28423D0423400F9F848 /* LocationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488E28323D0423400F9F848 /* LocationPoint.swift */; };
+		3488E28623D042AF00F9F848 /* UserDefaultDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488E28523D042AF00F9F848 /* UserDefaultDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3421287423B0D6D8003002F6 /* Map_PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_PracticeUITests.swift; sourceTree = "<group>"; };
 		3421287623B0D6D8003002F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3421288323B0D8B7003002F6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3488E28323D0423400F9F848 /* LocationPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPoint.swift; sourceTree = "<group>"; };
+		3488E28523D042AF00F9F848 /* UserDefaultDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				3421285B23B0D6D8003002F6 /* Assets.xcassets */,
 				3421285D23B0D6D8003002F6 /* LaunchScreen.storyboard */,
 				3421286023B0D6D8003002F6 /* Info.plist */,
+				3488E28323D0423400F9F848 /* LocationPoint.swift */,
+				3488E28523D042AF00F9F848 /* UserDefaultDataStore.swift */,
 			);
 			path = "Map Practice";
 			sourceTree = "<group>";
@@ -272,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3421285723B0D6D7003002F6 /* ViewController.swift in Sources */,
+				3488E28423D0423400F9F848 /* LocationPoint.swift in Sources */,
 				3421285323B0D6D7003002F6 /* AppDelegate.swift in Sources */,
 				3421285523B0D6D7003002F6 /* SceneDelegate.swift in Sources */,
+				3488E28623D042AF00F9F848 /* UserDefaultDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
