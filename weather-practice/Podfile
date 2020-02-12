@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'weather-practice' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for weather-practice
+    pod 'Alamofire',
+:git => 'https://github.com/Alamofire/Alamofire.git'
+
+  target 'weather-practiceTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'weather-practiceUITests' do
+    # Pods for testing
+  end
+
+end
