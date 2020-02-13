@@ -14,8 +14,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var coordinates: CLLocationCoordinate2D?
-    var temperature = 0
-
+    var temperature = 100
+    
+    @IBOutlet weak var CurrentTemperatureLabel: UILabel!
     @IBOutlet weak var TemperatureLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if (status == .authorizedWhenInUse) {
-            print("lol")
             getLocation()
         } else if (status == .denied) {
             let alert = UIAlertController(title: "ERROR!", message: "Allow app to access your location via settings", preferredStyle: .alert)
@@ -47,7 +47,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             let fullUrl = WeatherAPI(latitude: String(coordinates!.latitude), longitude: String(coordinates!.longitude)).getFullWeatherUrl()
             AF.request(fullUrl).responseJSON { response in
                 if let JSON = response.value {
-                    // print("JSON: \(JSON)")
                     self.getTemperature(json: JSON)
                 }
             }
@@ -58,8 +57,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let data = json as? Dictionary<String, AnyObject> {
             if let basicData = data["data"] as? Dictionary<String, AnyObject> {
                 if let weatherData = basicData["weather"] as? [Dictionary<String, AnyObject>] {
-                    if let currentTemp = weatherData[0] as? Dictionary<String, AnyObject> {
-                        print(currentTemp)
+                    if let currentTemp = weatherData[0]["avgtempC"] as? String {
+                        self.temperature = Int(currentTemp)!
+                        print("Average temperature: \(temperature)")
+                        CurrentTemperatureLabel.text = String(temperature) + " °C"
                     }
                 }
             }
